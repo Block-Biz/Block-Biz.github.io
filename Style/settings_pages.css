@@ -1,0 +1,150 @@
+@media (min-width: 680px) {
+    .heading {
+        overflow: hidden;
+        background-color: white;
+    }
+
+    #settings {
+        color: black;
+        background-color: white;
+        padding: 10px
+    }
+
+    #settings:hover {
+        border: none;
+    }
+
+    .page_heading {
+        display: flex;
+        justify-content: left;
+    }
+
+    .page_heading a {
+        font-size: xx-large;
+        color: black;
+        text-decoration: none;
+        font-weight: bolder;
+        margin-right: 20px;
+    }
+
+    .page_heading p {
+        margin-top: 0px;
+        font-size: larger;
+        color: black;
+        margin-left: 150px
+    }
+}
+
+@media (max-width: 680px) and (min-width: 500px) {
+    .heading {
+        overflow: hidden;
+        background-color: white;
+    }
+
+    #settings {
+        color: black;
+        background-color: white;
+        padding: 3px;
+        margin-bottom: 3px;
+    }
+
+    #settings:hover {
+        border: none;
+    }
+
+    .page_heading {
+        display: flex;
+        justify-content: left;
+    }
+
+    .page_heading a {
+        font-size: xx-large;
+        color: black;
+        text-decoration: none;
+        font-weight: bolder;
+        margin-right: 20px;
+    }
+
+    .page_heading p {
+        margin-top: 0px;
+        font-size: larger;
+        color: black;
+        margin-left: 100px
+    }
+}
+
+@media (max-width: 500px) and (min-width: 375px) {
+    .heading {
+        overflow: hidden;
+        background-color: white;
+    }
+
+    #settings {
+        color: black;
+        background-color: white;
+        padding: 2px;
+        margin-bottom: 3px;
+    }
+
+    #settings:hover {
+        border: none;
+    }
+
+    .page_heading {
+        display: flex;
+        justify-content: left;
+    }
+
+    .page_heading a {
+        font-size: xx-large;
+        color: black;
+        text-decoration: none;
+        font-weight: bolder;
+        margin-right: 20px;
+    }
+
+    .page_heading p {
+        margin-top: 0px;
+        font-size: larger;
+        color: black;
+        margin-left: 60px
+    }
+}
+
+@media (max-width: 375px) {
+    .heading {
+        overflow: hidden;
+        background-color: white;
+    }
+
+    #settings {
+        color: black;
+        background-color: white;
+        padding: 2px;
+        margin-bottom: 3px;
+    }
+
+    #settings:hover {
+        border: none;
+    }
+
+    .page_heading {
+        display: flex;
+        justify-content: left;
+    }
+
+    .page_heading a {
+        font-size: xx-large;
+        color: black;
+        text-decoration: none;
+        font-weight: bolder;
+        margin-right: 20px;
+    }
+
+    .page_heading p {
+        margin-top: 0px;
+        font-size: larger;
+        color: black;
+        margin-left: 40px
+    }
+}

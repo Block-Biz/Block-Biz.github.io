@@ -1,0 +1,46 @@
+.header {
+    height: 95px;
+}
+
+body {
+    background-color: white;
+}
+
+@media (min-width:600px) {
+    .navbar-brand {
+        font-size: 2.5rem;
+        margin-left: 15px;
+        font-weight: 900;
+        -webkit-text-stroke: 1px white;
+    }
+}
+
+@media (max-width:600px) {
+    .navbar-brand {
+        font-size: xx-large;
+        margin-left: 0px;
+        font-weight: 900;
+        -webkit-text-stroke: 1px white;
+    }
+}
+
+.logo {
+    width: 60px;
+    border-radius: 50%;
+    margin-left: 8px;
+    margin-right: 0px
+}
+
+.nav-item a {
+    color: whitesmoke
+}
+
+.offcanvas-title {
+    font-size: xx-large;
+    font-weight: 900;
+    -webkit-text-stroke: 1px white;
+}
+
+.active {
+    font-weight: bolder;
+}

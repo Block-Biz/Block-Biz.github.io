@@ -1,0 +1,82 @@
+body {
+    margin: 0px;
+    font-family: "Poppins", sans-serif;
+}
+
+#product,
+#btc,
+#gold,
+#returns {
+    width: 800px;
+    height: 400px;
+    margin-left: 150px;
+    margin-bottom: 15px;
+    padding: 15px;
+    box-shadow: 3px 3px 12px 3px grey;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+.page {
+    overflow: hidden;
+    background-color: white;
+}
+
+.heading {
+    display: flex;
+    flex-direction: row;
+}
+
+.heading h1 {
+    margin-top: 80px;
+    font-size: xx-large;
+    margin-bottom: 5px;
+    color: blue
+}
+
+.heading h3 {
+    margin-top: 10px;
+    color: #2ce961
+}
+
+.heading h1,
+.heading h3 {
+    margin-left: 150px;
+
+}
+
+.options {
+    margin-left: 150px
+}
+
+.options button {
+    border-radius: 5px;
+    width: 40px;
+    font-size: large;
+    background-color: grey;
+    color: white;
+    border: 1px solid grey;
+    margin-right: 3px
+}
+
+.contract-details {
+    margin-left: 150px;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
+.view-options button {
+    border-radius: 5px;
+    width: 40px;
+    font-size: large;
+    background-color: grey;
+    color: white;
+    border: 1px solid grey;
+    margin-right: 3px
+}
+
+.view-options {
+    margin-left: 150px;
+    margin-top: 10px;
+    transition: 1.5s;
+}

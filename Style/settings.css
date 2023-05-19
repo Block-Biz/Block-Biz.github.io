@@ -1,0 +1,335 @@
+body {
+    background-color: white;
+}
+
+#delAcc {
+    color: black
+}
+
+@media (min-width: 680px) {
+    .overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 2;
+    }
+
+    .confirm-box {
+        width: 50%;
+        top: 25%;
+        left: 25%;
+        position: absolute;
+        text-align: center;
+        background: white;
+    }
+
+    .close {
+        cursor: pointer;
+    }
+
+    .menu {
+        overflow: hidden;
+        background-color: white;
+        height: 330px
+    }
+
+    #choice {
+        color: black
+    }
+
+    .settings {
+        display: inline-block;
+        justify-content: center;
+        width: 100%
+    }
+
+    .settings p {
+        display: flex;
+        justify-content: center;
+    }
+
+    .settings a,
+    .settings button {
+        text-decoration: none;
+        font-size: xx-large;
+        font-family: 'BeirutDisplayWeb', HelveticaNow, Helvetica, sans-serif;
+        color: black;
+        transition: 0.4s
+    }
+
+    .settings button {
+        border: none;
+        color: black;
+        background-color: transparent;
+        cursor: pointer
+    }
+
+    .settings a:hover,
+    .settings button:hover,
+    #choice {
+        color: white;
+        background-color: black;
+        padding: 3px
+    }
+
+    #settings {
+        color: white;
+        background-color: black;
+        padding: 10px
+    }
+
+    #settings:hover {
+        border: none;
+    }
+}
+
+@media (max-width: 680px) and (min-width: 500px) {
+    .overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 2;
+    }
+
+    .confirm-box {
+        width: 50%;
+        top: 25%;
+        left: 25%;
+        position: absolute;
+        text-align: center;
+        background: white;
+    }
+
+    .close {
+        cursor: pointer;
+    }
+
+    .menu {
+        overflow: hidden;
+        background-color: white;
+        height: 330px
+    }
+
+    #choice {
+        color: black
+    }
+
+    .settings {
+        display: inline-block;
+        justify-content: center;
+        width: 100%
+    }
+
+    .settings p {
+        display: flex;
+        justify-content: center;
+    }
+
+    .settings a,
+    .settings button {
+        text-decoration: none;
+        font-size: xx-large;
+        font-family: 'BeirutDisplayWeb', HelveticaNow, Helvetica, sans-serif;
+        color: black;
+        transition: 0.4s
+    }
+
+    .settings button {
+        border: none;
+        background-color: transparent;
+        cursor: pointer
+    }
+
+    .settings a:hover,
+    .settings button:hover,
+    #choice {
+        color: white;
+        background-color: black;
+        padding: 3px
+    }
+
+    #settings {
+        color: black;
+        background-color: white;
+        padding: 3px;
+        margin-bottom: 3px;
+    }
+
+    #settings:hover {
+        border: none;
+    }
+}
+
+@media (max-width: 500px) and (min-width: 375px) {
+    .confirm-box {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 2;
+    }
+
+    .confirm-box {
+        width: 50%;
+        top: 25%;
+        left: 25%;
+        position: absolute;
+        text-align: center;
+        background: white;
+    }
+
+    .close {
+        cursor: pointer;
+    }
+
+    #choice {
+        color: black
+    }
+
+    .menu {
+        overflow: hidden;
+        background-color: white;
+        height: 330px
+    }
+
+    .settings {
+        display: inline-block;
+        justify-content: center;
+        width: 100%
+    }
+
+    .settings p {
+        display: flex;
+        justify-content: center;
+    }
+
+    .settings a,
+    .settings button {
+        text-decoration: none;
+        font-size: xx-large;
+        font-family: 'BeirutDisplayWeb', HelveticaNow, Helvetica, sans-serif;
+        color: black;
+    }
+
+    .settings button {
+        border: none;
+        background-color: transparent;
+        cursor: pointer
+    }
+
+    .settings a:hover,
+    .settings button:hover,
+    #choice {
+        color: white;
+        background-color: black;
+        padding: 3px
+    }
+
+    #settings {
+        color: black;
+        background-color: white;
+        padding: 2px;
+        margin-bottom: 3px;
+    }
+
+    #settings:hover {
+        border: none;
+    }
+}
+
+@media (max-width: 375px) {
+    .confirm-box {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 2;
+    }
+
+    .confirm-box {
+        width: 50%;
+        top: 25%;
+        left: 25%;
+        position: absolute;
+        text-align: center;
+        background: white;
+    }
+
+    .close {
+        cursor: pointer;
+    }
+
+    #choice {
+        color: black
+    }
+
+    .menu {
+        overflow: hidden;
+        background-color: white;
+        height: 275px
+    }
+
+    .settings {
+        display: inline-block;
+        justify-content: center;
+        width: 100%
+    }
+
+    .settings p {
+        display: flex;
+        justify-content: center;
+    }
+
+    .settings a,
+    .settings button {
+        text-decoration: none;
+        font-size: x-large;
+        font-family: 'BeirutDisplayWeb', HelveticaNow, Helvetica, sans-serif;
+        color: BLACK;
+    }
+
+    .settings button {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .settings a:hover,
+    .settings button:hover,
+    #choice {
+        color: white;
+        background-color: black;
+        padding: 2px
+    }
+
+    #settings {
+        color: black;
+        background-color: white;
+        padding: 2px;
+        margin-bottom: 3px;
+    }
+
+    #settings:hover {
+        border: none;
+    }
+}
