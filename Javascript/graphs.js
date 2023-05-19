@@ -915,6 +915,7 @@ fourthSeries.name("Silver")
 firstSeries.hovered().markers().type("circle").size(4);
 secondSeries.hovered().markers().type("circle").size(4);
 thirdSeries.hovered().markers().type("circle").size(4);
+fourthSeries.hovered().markers().type("circle").size(4);
 
 chart.legend().enabled(true);
 chart.tooltip().positionMode("point");
@@ -992,6 +993,7 @@ oneReturns.addEventListener('click', function onClick() {
     var firstSeriesData = dataSet.mapAs({ x: 0, value: 1 });
     var secondSeriesData = dataSet.mapAs({ x: 0, value: 2 });
     var thirdSeriesData = dataSet.mapAs({ x: 0, value: 6 });
+    var fourthSeriesData = dataSet.mapAs({ x: 0, value: 9 });
     // create a line chart
     var chart = anychart.line();
     chart.title("Returns");
@@ -1009,6 +1011,8 @@ oneReturns.addEventListener('click', function onClick() {
     secondSeries.name("Crude Oil");
     var thirdSeries = chart.line(thirdSeriesData);
     thirdSeries.name("Gold");
+    var fourthSeries = chart.line(fourthSeriesData);
+    fourthSeries.name("Silver");
     firstSeries.hovered().markers().type("circle").size(4);
     secondSeries.hovered().markers().type("circle").size(4);
     thirdSeries.hovered().markers().type("circle").size(4);
@@ -1048,6 +1052,7 @@ twoReturns.addEventListener('click', function onClick() {
     var firstSeriesData = dataSet.mapAs({ x: 0, value: 1 });
     var secondSeriesData = dataSet.mapAs({ x: 0, value: 2 });
     var thirdSeriesData = dataSet.mapAs({ x: 0, value: 6 });
+    var fourthSeriesData = dataSet.mapAs({ x: 0, value: 9 })
     // create a line chart
     var chart = anychart.line();
     chart.xAxis().labels().rotation(-70);
@@ -1065,6 +1070,8 @@ twoReturns.addEventListener('click', function onClick() {
     secondSeries.name("Crude Oil");
     var thirdSeries = chart.line(thirdSeriesData);
     thirdSeries.name("Gold");
+    var fourthSeries = chart.line(fourthSeriesData);
+    fourthSeries.name("Silver");
     firstSeries.hovered().markers().type("circle").size(4);
     secondSeries.hovered().markers().type("circle").size(4);
     thirdSeries.hovered().markers().type("circle").size(4);
@@ -1105,6 +1112,8 @@ threeReturns.addEventListener('click', function onClick() {
     var firstSeriesData = dataSet.mapAs({ x: 0, value: 1 });
     var secondSeriesData = dataSet.mapAs({ x: 0, value: 2 });
     var thirdSeriesData = dataSet.mapAs({ x: 0, value: 6 });
+    var fourthSeriesData = dataSet.mapAs({ x: 0, value: 9 });
+
     // create a line chart
     var chart = anychart.line();
     chart.title("Returns");
@@ -1122,6 +1131,8 @@ threeReturns.addEventListener('click', function onClick() {
     secondSeries.name("Crude Oil");
     var thirdSeries = chart.line(thirdSeriesData);
     thirdSeries.name("Gold");
+    var fourthSeries = chart.line(fourthSeriesData);
+    fourthSeries.name("Silver");
     firstSeries.hovered().markers().type("circle").size(4);
     secondSeries.hovered().markers().type("circle").size(4);
     thirdSeries.hovered().markers().type("circle").size(4);
@@ -1161,6 +1172,7 @@ fourReturns.addEventListener('click', function onClick() {
     var firstSeriesData = dataSet.mapAs({ x: 0, value: 1 });
     var secondSeriesData = dataSet.mapAs({ x: 0, value: 2 });
     var thirdSeriesData = dataSet.mapAs({ x: 0, value: 6 });
+    var fourthSeriesData = dataSet.mapAs({ x: 0, value: 9 });
     // create a line chart
     var chart = anychart.line();
     chart.xAxis().labels().rotation(-70);
@@ -1178,6 +1190,8 @@ fourReturns.addEventListener('click', function onClick() {
     secondSeries.name("Crude Oil");
     var thirdSeries = chart.line(thirdSeriesData);
     thirdSeries.name("Gold");
+    var fourthSeries = chart.line(fourhtSeriesData);
+    fourthSeries.name("Silver");
     firstSeries.hovered().markers().type("circle").size(4);
     secondSeries.hovered().markers().type("circle").size(4);
     thirdSeries.hovered().markers().type("circle").size(4);
@@ -1824,7 +1838,7 @@ twoSilver.addEventListener('click', function onClick() {
 
     // draw the resulting chart
     chart.draw();
-    chart.xAxis().labels().rotation(-30);
+    chart.xAxis().labels().rotation(-70);
     chart.xAxis().title("December 2022");
     //adjusting markers
     var firstSeries = chart.line(firstSeriesData);
@@ -1846,28 +1860,27 @@ twoSilver.addEventListener('click', function onClick() {
         );
 });
 
-threeReturns.addEventListener('click', function onClick() {
-    threeReturns.style.backgroundColor = 'black';
-    threeReturns.style.borderColor = 'black';
-    oneReturns.style.backgroundColor = 'grey';
-    oneReturns.style.borderColor = 'grey'
-    twoReturns.style.backgroundColor = 'grey';
-    twoReturns.style.borderColor = 'grey'
-    fourReturns.style.backgroundColor = 'grey';
-    fourReturns.style.borderColor = 'grey'
+threeSilver.addEventListener('click', function onClick() {
+    oneSilver.style.backgroundColor = 'grey';
+    oneSilver.style.borderColor = 'grey';
+    twoSilver.style.backgroundColor = 'grey';
+    twoSilver.style.borderColor = 'grey'
+    threeSilver.style.backgroundColor = 'black';
+    threeSilver.style.borderColor = 'black'
+    fourSilver.style.backgroundColor = 'grey';
+    fourSilver.style.borderColor = 'grey'
 
-    document.getElementById("returns").replaceChildren();
+    document.getElementById("silver").replaceChildren();
     var dataSet = anychart.data.set(oneYear);
 
     // map the data for all series
-    var firstSeriesData = dataSet.mapAs({ x: 0, value: 1 });
-    var secondSeriesData = dataSet.mapAs({ x: 0, value: 2 });
-    var thirdSeriesData = dataSet.mapAs({ x: 0, value: 6 });
+    var firstSeriesData = dataSet.mapAs({ x: 0, value: 7 });
+
     // create a line chart
     var chart = anychart.line();
-    chart.title("Returns");
+    chart.title("Silver");
     // specify where to display the chart
-    chart.container("returns");
+    chart.container("silver");
 
     // draw the resulting chart
     chart.draw();
@@ -1875,22 +1888,13 @@ threeReturns.addEventListener('click', function onClick() {
     chart.xAxis().title("2022");
     //adjusting markers
     var firstSeries = chart.line(firstSeriesData);
-    firstSeries.name("BTC");
-    var secondSeries = chart.line(secondSeriesData);
-    secondSeries.name("Crude Oil");
-    var thirdSeries = chart.line(thirdSeriesData);
-    thirdSeries.name("Gold");
-    firstSeries.hovered().markers().type("circle").size(4);
-    secondSeries.hovered().markers().type("circle").size(4);
-    thirdSeries.hovered().markers().type("circle").size(4);
+    firstSeries.name("Price");
 
     chart.legend().enabled(true);
     chart.tooltip().positionMode("point");
     chart.tooltip().position("right").anchor("left-center").offsetX(5).offsetY(5);
     //changing line colours
-    firstSeries.normal().stroke("#FFA500", 2.5);
-    secondSeries.normal().stroke("#1a1718", 2.5);
-    thirdSeries.normal().stroke("#FFD700", 2.5);
+    firstSeries.normal().stroke("#0000FF", 2.5);
     chart.background().enabled(true);
     chart.background().fill("#FFFFFF");
     chart
@@ -1898,55 +1902,45 @@ threeReturns.addEventListener('click', function onClick() {
         .enabled(true)
         .useHtml(true)
         .text(
-            '<span style="color: #000000; font-size:20px;">Returns</span>'
+            '<span style="color: #000000; font-size:20px;">Silver</span>'
         );
 });
 
-fourReturns.addEventListener('click', function onClick() {
-    fourReturns.style.backgroundColor = 'black';
-    fourReturns.style.borderColor = 'black';
-    oneReturns.style.backgroundColor = 'grey';
-    oneReturns.style.borderColor = 'grey'
-    twoReturns.style.backgroundColor = 'grey';
-    twoReturns.style.borderColor = 'grey'
-    threeReturns.style.backgroundColor = 'grey';
-    threeReturns.style.borderColor = 'grey'
+fourSilver.addEventListener('click', function onClick() {
+    oneSilver.style.backgroundColor = 'grey';
+    oneSilver.style.borderColor = 'grey';
+    twoSilver.style.backgroundColor = 'grey';
+    twoSilver.style.borderColor = 'grey'
+    threeSilver.style.backgroundColor = 'black';
+    threeSilver.style.borderColor = 'black'
+    fourSilver.style.backgroundColor = 'grey';
+    fourSilver.style.borderColor = 'grey'
 
-    document.getElementById("returns").replaceChildren();
+    document.getElementById("silver").replaceChildren();
     var dataSet = anychart.data.set(fiveYear);
 
     // map the data for all series
-    var firstSeriesData = dataSet.mapAs({ x: 0, value: 1 });
-    var secondSeriesData = dataSet.mapAs({ x: 0, value: 2 });
-    var thirdSeriesData = dataSet.mapAs({ x: 0, value: 6 });
+    var firstSeriesData = dataSet.mapAs({ x: 0, value: 7 });
+
     // create a line chart
     var chart = anychart.line();
-    chart.xAxis().labels().rotation(-70);
-    chart.title("Returns");
+    chart.title("Silver");
     // specify where to display the chart
-    chart.container("returns");
+    chart.container("silver");
 
     // draw the resulting chart
     chart.draw();
+    chart.xAxis().labels().rotation(-70);
     chart.xAxis().title("Date");
     //adjusting markers
     var firstSeries = chart.line(firstSeriesData);
-    firstSeries.name("BTC");
-    var secondSeries = chart.line(secondSeriesData);
-    secondSeries.name("Crude Oil");
-    var thirdSeries = chart.line(thirdSeriesData);
-    thirdSeries.name("Gold");
-    firstSeries.hovered().markers().type("circle").size(4);
-    secondSeries.hovered().markers().type("circle").size(4);
-    thirdSeries.hovered().markers().type("circle").size(4);
+    firstSeries.name("Price");
 
     chart.legend().enabled(true);
     chart.tooltip().positionMode("point");
     chart.tooltip().position("right").anchor("left-center").offsetX(5).offsetY(5);
     //changing line colours
-    firstSeries.normal().stroke("#FFA500", 2.5);
-    secondSeries.normal().stroke("#1a1718", 2.5);
-    thirdSeries.normal().stroke("#FFD700", 2.5);
+    firstSeries.normal().stroke("#0000FF", 2.5);
     chart.background().enabled(true);
     chart.background().fill("#FFFFFF");
     chart
@@ -1954,6 +1948,6 @@ fourReturns.addEventListener('click', function onClick() {
         .enabled(true)
         .useHtml(true)
         .text(
-            '<span style="color: #000000; font-size:20px;">Returns</span>'
+            '<span style="color: #000000; font-size:20px;">Silver</span>'
         );
 });
