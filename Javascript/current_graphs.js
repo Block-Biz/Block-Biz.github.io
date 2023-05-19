@@ -39,6 +39,7 @@ signContract.addEventListener('click', function onClick() {
     contentContract = document.querySelector(".contract-details");
     document.getElementById("contract").style.display = "none";
     document.getElementById("make-contract").style.color = "whitesmoke";
+    document.getElementById("make-contract").style.color = "whitesmoke";
     window.scroll(0, 0)
     document.getElementById("fund-details").style.color = "black"
     const contractDate = document.getElementById("contract-date").value;

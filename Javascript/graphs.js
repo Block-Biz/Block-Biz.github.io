@@ -962,7 +962,6 @@ chart.xAxis().title("December 2022");
 var firstSeries = chart.line(firstSeriesData);
 firstSeries.name("Price");
 
-chart.legend().enabled(true);
 chart.tooltip().positionMode("point");
 chart.tooltip().position("right").anchor("left-center").offsetX(5).offsetY(5);
 //changing line colours
