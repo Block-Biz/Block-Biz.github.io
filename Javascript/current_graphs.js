@@ -12,7 +12,10 @@ window.scroll(0, 0)
 const login = document.getElementById("login")
 
 myProfile.addEventListener('click', function onClick() {
-    document.getElementById("user-profile").style.display = "flex"
+    document.getElementById("user-profile").style.display = "block"
+    document.getElementById("the_graphs").style.display = "none";
+    document.getElementById("contract").style.display = "none";
+    document.getElementById("view-contract").style.display = "none";
     document.getElementById("home").style.color = "whitesmoke";
     document.getElementById("fund-details").style.color = "whitesmoke";
     document.getElementById("my-profile").style.color = "black";
@@ -35,6 +38,7 @@ signContract.addEventListener('click', function onClick() {
     content = document.querySelector(".view-contract");
     contentContract = document.querySelector(".contract-details");
     document.getElementById("contract").style.display = "none";
+    document.getElementById("make-contract").style.color = "whitesmoke";
     window.scroll(0, 0)
     document.getElementById("fund-details").style.color = "black"
     const contractDate = document.getElementById("contract-date").value;
