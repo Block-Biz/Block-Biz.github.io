@@ -3,80 +3,353 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
-#product,
-#btc,
-#gold,
-#returns {
-    width: 800px;
-    height: 400px;
-    margin-left: 150px;
-    margin-bottom: 15px;
-    padding: 15px;
-    box-shadow: 3px 3px 12px 3px grey;
-    margin-top: 15px;
-    border-radius: 10px;
+.view-contract {
+    margin-top: 80px
 }
 
-.page {
-    overflow: hidden;
-    background-color: white;
+@media (min-width:1000px) {
+
+    #product,
+    #btc,
+    #gold,
+    #returns {
+        width: 800px;
+        height: 400px;
+        margin-left: 150px;
+        margin-bottom: 15px;
+        padding: 15px;
+        box-shadow: 3px 3px 12px 3px grey;
+        margin-top: 15px;
+        border-radius: 10px;
+    }
+
+    .page {
+        overflow: hidden;
+        background-color: white;
+    }
+
+    .heading {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .heading h1 {
+        margin-top: 80px;
+        font-size: xx-large;
+        margin-bottom: 5px;
+        color: blue
+    }
+
+    .heading h3 {
+        margin-top: 10px;
+        color: #2ce961
+    }
+
+    .heading h1,
+    .heading h3 {
+        margin-left: 150px;
+
+    }
+
+    .options {
+        margin-left: 150px
+    }
+
+    .options button {
+        border-radius: 5px;
+        width: 40px;
+        font-size: large;
+        background-color: grey;
+        color: white;
+        border: 1px solid grey;
+        margin-right: 3px
+    }
+
+    .contract-details {
+        margin-left: 350px;
+        margin-top: 15px;
+        margin-bottom: 40px;
+        padding: 40px;
+        width: 400px;
+        border: 2px solid black;
+        box-shadow: 3px 3px 12px 3px grey;
+        border-radius: 5px;
+    }
+
+    .contract-details h4 {
+        margin-bottom: 1px;
+        margin-top: 3px;
+        font-weight: 600;
+        color: black;
+        text-align: center;
+    }
+
+    .view-options button {
+        border-radius: 5px;
+        width: 40px;
+        font-size: large;
+        background-color: grey;
+        color: white;
+        border: 1px solid grey;
+        margin-right: 3px
+    }
+
+    .view-options {
+        margin-left: 150px;
+        margin-top: 10px;
+        transition: 1.5s;
+    }
 }
 
-.heading {
-    display: flex;
-    flex-direction: row;
+@media (max-width:1000px) and (min-width: 600px) {
+
+    #product,
+    #btc,
+    #gold,
+    #returns {
+        width: 500px;
+        height: 400px;
+        margin-left: 50px;
+        margin-bottom: 15px;
+        padding: 15px;
+        box-shadow: 3px 3px 12px 3px grey;
+        margin-top: 15px;
+        border-radius: 10px;
+    }
+
+    .page {
+        overflow: hidden;
+        background-color: white;
+    }
+
+    .heading {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .heading h1 {
+        margin-top: 80px;
+        font-size: xx-large;
+        margin-bottom: 5px;
+        color: blue
+    }
+
+    .heading h3 {
+        margin-top: 10px;
+        color: #2ce961
+    }
+
+    .heading h1,
+    .heading h3 {
+        margin-left: 50px;
+
+    }
+
+    .options {
+        margin-left: 50px
+    }
+
+    .options button {
+        border-radius: 5px;
+        width: 40px;
+        font-size: large;
+        background-color: grey;
+        color: white;
+        border: 1px solid grey;
+        margin-right: 3px
+    }
+
+    .contract-details {
+        margin-left: 50px;
+        margin-top: 15px;
+        margin-bottom: 40px;
+    }
+
+    .view-options button {
+        border-radius: 5px;
+        width: 40px;
+        font-size: large;
+        background-color: grey;
+        color: white;
+        border: 1px solid grey;
+        margin-right: 3px
+    }
+
+    .view-options {
+        margin-left: 50px;
+        margin-top: 10px;
+        transition: 1.5s;
+    }
 }
 
-.heading h1 {
-    margin-top: 80px;
-    font-size: xx-large;
-    margin-bottom: 5px;
-    color: blue
+@media (max-width:600px) and (min-width: 450px) {
+
+    #product,
+    #btc,
+    #gold,
+    #returns {
+        width: 400px;
+        height: 350px;
+        margin-left: 25px;
+        margin-bottom: 15px;
+        padding: 15px;
+        box-shadow: 3px 3px 12px 3px grey;
+        margin-top: 15px;
+        border-radius: 10px;
+    }
+
+    .page {
+        overflow: hidden;
+        background-color: white;
+    }
+
+    .heading {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .heading h1 {
+        margin-top: 80px;
+        font-size: xx-large;
+        margin-bottom: 5px;
+        color: blue
+    }
+
+    .heading h3 {
+        margin-top: 10px;
+        color: #2ce961
+    }
+
+    .heading h1,
+    .heading h3 {
+        margin-left: 25px;
+
+    }
+
+    .options {
+        margin-left: 25px
+    }
+
+    .options button {
+        border-radius: 5px;
+        width: 40px;
+        font-size: large;
+        background-color: grey;
+        color: white;
+        border: 1px solid grey;
+        margin-right: 3px
+    }
+
+    .contract-details {
+        margin-left: 25px;
+        margin-top: 15px;
+        margin-bottom: 40px;
+    }
+
+    .view-options button {
+        border-radius: 5px;
+        width: 40px;
+        font-size: large;
+        background-color: grey;
+        color: white;
+        border: 1px solid grey;
+        margin-right: 3px
+    }
+
+    .view-options {
+        margin-left: 25px;
+        margin-top: 10px;
+        transition: 1.5s;
+    }
 }
 
-.heading h3 {
-    margin-top: 10px;
-    color: #2ce961
-}
+@media (max-width:450px) {
 
-.heading h1,
-.heading h3 {
-    margin-left: 150px;
+    #product,
+    #btc,
+    #gold,
+    #returns {
+        width: 325px;
+        height: 300px;
+        margin-left: 20px;
+        margin-bottom: 15px;
+        padding: 15px;
+        box-shadow: 3px 3px 12px 3px grey;
+        margin-top: 15px;
+        border-radius: 10px;
+    }
 
-}
+    .page {
+        overflow: hidden;
+        background-color: white;
+    }
 
-.options {
-    margin-left: 150px
-}
+    .heading {
+        display: flex;
+        flex-direction: row;
+    }
 
-.options button {
-    border-radius: 5px;
-    width: 40px;
-    font-size: large;
-    background-color: grey;
-    color: white;
-    border: 1px solid grey;
-    margin-right: 3px
-}
+    .heading h1 {
+        margin-top: 80px;
+        font-size: xx-large;
+        margin-bottom: 5px;
+        color: blue
+    }
 
-.contract-details {
-    margin-left: 150px;
-    margin-top: 15px;
-    margin-bottom: 40px;
-}
+    .heading h3 {
+        margin-top: 10px;
+        color: #2ce961
+    }
 
-.view-options button {
-    border-radius: 5px;
-    width: 40px;
-    font-size: large;
-    background-color: grey;
-    color: white;
-    border: 1px solid grey;
-    margin-right: 3px
-}
+    .heading h1,
+    .heading h3 {
+        margin-left: 20px;
 
-.view-options {
-    margin-left: 150px;
-    margin-top: 10px;
-    transition: 1.5s;
+    }
+
+    .options {
+        margin-left: 20px
+    }
+
+    .options button {
+        border-radius: 5px;
+        width: 40px;
+        font-size: large;
+        background-color: grey;
+        color: white;
+        border: 1px solid grey;
+        margin-right: 3px
+    }
+
+    .contract-details {
+        margin-left: 20px;
+        margin-top: 15px;
+        margin-bottom: 40px;
+        border: 3px solid black;
+        border-radius: 4px
+    }
+
+    .contract-details h4 {
+        margin-bottom: 1px;
+        margin-top: 3px;
+        font-weight: 600;
+        color: black;
+        text-align: center;
+    }
+
+    .view-options button {
+        border-radius: 5px;
+        width: 40px;
+        font-size: large;
+        background-color: grey;
+        color: white;
+        border: 1px solid grey;
+        margin-right: 3px
+    }
+
+    .view-options {
+        margin-left: 20px;
+        margin-top: 10px;
+        transition: 1.5s;
+    }
 }

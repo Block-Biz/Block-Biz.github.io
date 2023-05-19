@@ -8,13 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Style/page_styles.css">
     <link rel="stylesheet" href="Style/bootstrap.min.css">
+    <link href="./Style/contract.css" rel="stylesheet" />
     <script src="Javascript/anychart-base.min.js"></script>
     <script src="Javascript/bootstrap.bundle.min.js"></script>
     <title>Home</title>
 </head>
 
 <body>
-    <section>
+    <section id="navbar">
         <nav class="navbar bg-primary navbar-expand-md fixed-top">
             <div class="container-fluid">
                 <img class="logo" src="Logos/BlockBiz Final Logo.jpg">
@@ -32,19 +33,13 @@
                     <div class="offcanvas-body bg-primary">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <button class="bg-primary" id="home">Home&nbsp;&nbsp;&nbsp;</button>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">My Profile</a>
+                                <button class="bg-primary" id="my-profile">My Profile&nbsp;&nbsp;&nbsp;</button>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Fund Details</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Settings</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Logout</a>
+                                <button class="bg-primary" id="fund-details">Fund Details&nbsp;&nbsp;&nbsp;</button>
                             </li>
                         </ul>
                     </div>
@@ -52,7 +47,7 @@
             </div>
         </nav>
     </section>
-    <section class="page">
+    <section class="page" id="the_graphs">
         <div class="heading">
             <div class="headings" id="head">
                 <h1>$80.16</h1>
@@ -93,10 +88,118 @@
                 </div>
                 <div class="returns-graphs" id="returns">
                 </div>
+                <div class="contract-details" id="contract-box"></div>
             </div>
         </div>
     </section>
     <script src="Javascript/graphs.js"></script>
+    <section class="contract-agreement" id="contract">
+        <div class="contract-wrapper">
+            <div class="contract">
+                <div class="contract-header">
+                    <h1>Contract</h1>
+                </div>
+                <div class="contract-body">
+                    <div class="contract-clause">
+                        <div class="clause-header">
+                            <h2>Custom contract</h2>
+                        </div>
+                        <p>
+                            This is a smart contract entered into on <input type="date" name=""
+                                placeholder="Date of signing contract" id="contract-date" /> between <input type="text"
+                                placeholder="Party 1" id="party-one" /> and <input type="text" placeholder="Party 2"
+                                id="party-two" />
+                            for the
+                            contractual amount of <input type="number" placeholder="Amount" min="0"
+                                id="contract-amount"> where PARTY 1 is
+                            the buyer and <input type="text" placeholder="Party 2" /> is the seller. the
+                            representatives
+                            of <input type="text" placeholder="Party 1" /> and <input type="text"
+                                placeholder="Party 2" /> are <input type="text" placeholder="Name 1" id="name-one" />
+                            and <input type="text" placeholder="Name 2" id="name-two" /> respectively. The
+                            underlying
+                            asset of this contract is <input type="text" placeholder="Product" id="contract-product">.
+                            This contract will
+                            begin on
+                            <input type="date" name="" placeholder="Date of signing contract" id="start-date" /> for the
+                            duration of
+                            <input type="number" placeholder="Duration" id="duration"> months/years and will end on
+                            <input type="date" name="" placeholder="End of Contract date" id="end-date" /> unless
+                            otherwise terminated
+                            by the mutual
+                            agreement of
+                            both parties or as specified in this contract.
+                        </p>
+                    </div>
+                    <div class="contract-clause">
+                        <div class="clause-header">
+                            <h2>Optional Clause</h2>
+                        </div>
+                        <p>
+                        <ul>
+                            <li>
+                                The parties may agree that the position in the digital asset may be closed if the losses
+                                reach <input type="number" placeholder="Percentage" id="percentage" />%
+                            </li>
+                        </ul>
+                        </p>
+                    </div>
+                    <div class="contract-clause">
+                        <div class="clause-header">
+                            <h2>Non-negotiable Terms and Conditions</h2>
+                        </div>
+                        <p>
+                        <ol>
+                            <li> A minimum of 50% of the total contractual amount is to be invested in the digita asset.
+                            </li>
+                            <li>At any point before the date of maturity of contract, the position in the digital
+                                asset can be closed to continue with the traditional method of a forward contract
+                                for the remaining time period only if both parties agree to do so.
+                            </li>
+                            <li> If the above mentioned is not executed, the position in the digital asset will be
+                                closed automatically at the date of maturity of the contract.
+                            </li>
+                            <li>If the selling party incurs a loss, the buying party is under no obligation to share
+                                the losses
+                            </li>
+                            <li> BlockBiz will not be sharing any losses with either of the parties.
+                            </li>
+                            <li> A fee of 1% of the total contractual amount will be charged to each of the parties
+                                involved in this contract.
+                            </li>
+                            <li>In the event of any disputes or disagreements between the parties arising from this
+                                contract, both parties agree to first attempt to resolve the dispute amicably
+                                through mediation. If the dispute cannot be resolved through mediation, both
+                                parties agree to binding arbitration in accordance with the rules and regulations of
+                                BlockBiz
+                            </li>
+                            <li> In case of termination due to disputes, a fee of 5% of the total contractual amount
+                                will be charged to each of the parties involved in this contract.
+                            </li>
+                            <li> This Contract may be amended or modified at any time with the mutual agreement
+                                of both parties, and any amendments or modifications shall be in writing and
+                                signed by both parties
+                        </ol>
+                        </p>
+                    </div>
+                </div>
+                <div class="contract-footer">
+                    <div class="signed-by">
+                        <div>Signed by <input type="text" name="" id="signed-by-two"></div>
+                        <div>Date <input type="date" name="" id="sign-date-two"></div>
+                    </div>
+                    <div class="signed-by">
+                        <div>Signed by <input type="text" name="" id="signed-by-one"></div>
+                        <div>Date <input type="date" name="" id="sign-date"></div>
+                    </div>
+                </div>
+                <center><button id="sign-contract">Sign Contract</button></center>
+            </div>
+    </section>
+    <section class="view-contract" id="view-contract">
+
+    </section>
+    <script src="Javascript/current_graphs.js"></script>
 </body>
 
 </html>
