@@ -8,17 +8,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Style/page_styles.css">
     <link rel="stylesheet" href="Style/bootstrap.min.css">
+    <link rel="stylesheet" href="Style/login.css">
     <link href="./Style/contract.css" rel="stylesheet" />
     <script src="Javascript/anychart-base.min.js"></script>
     <script src="Javascript/bootstrap.bundle.min.js"></script>
+    <link rel="icon" href="Logos/BlockBiz Final Logo.jpg">
     <title>Home</title>
 </head>
 
-<body>
+<body id="body">
+    <section class="user-profile" id="user-profile">
+        <h1>Username: ndlovuraymond</h1>
+        <h1>Name: Raymond Ndlovu</h1>
+        <h1>Date of Account Creation: 2023/04/30</h1>
+        <h1>Date of Birth: 2000/14/10</h1>
+    </section>
+    <div class="login bg-primary" id="login-form">
+        <form class="details" action="">
+            <div class="container-fluid">
+                <div class="row justify-content-center"><img class="logo" src="Logos/BlockBiz Final Logo.jpg" alt="">
+                </div>
+                <div class="row mt-2"><label for="username">Username</label></div>
+                <div class="row justify-content-center">
+                    <div class="col justify-content-center mb-2">
+                        <input type="text" name="user" id="username" placeholder="Enter Your Username">
+                    </div>
+                </div>
+                <div class="row"><label for="pass">Password</label></div>
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <input type="password" name="pass" id="pass" placeholder="Enter Your Password">
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-2" id="error-name">
+                </div>
+                <div class="row mt-2 justify-content-center">
+                    <div class="col"><Button type="button" id="login">Login</Button></div>
+                </div>
+        </form>
+    </div>
+    </div>
     <section id="navbar">
         <nav class="navbar bg-primary navbar-expand-md fixed-top">
             <div class="container-fluid">
-                <img class="logo" src="Logos/BlockBiz Final Logo.jpg">
+                <img class="logo" id="logo" src="Logos/BlockBiz Final Logo.jpg">
                 <h1 class="navbar-brand text-primary">BlockBiz</h1>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -42,6 +75,14 @@
                             <li class="nav-item">
                                 <button class="bg-primary border-0" id="fund-details">Fund
                                     Details&nbsp;&nbsp;&nbsp;</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="bg-primary border-0" id="make-contract">Make
+                                    Contract&nbsp;&nbsp;&nbsp;</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="bg-primary border-0" id="logout">
+                                    Logout&nbsp;&nbsp;&nbsp;</button>
                             </li>
                         </ul>
                     </div>
@@ -83,6 +124,14 @@
                 <div class="gold-graphs" id="gold">
                 </div>
                 <div class="view-options" id="view-options">
+                    <button class="onem" id="one-silver">1M</button>
+                    <button class="threem" id="two-silver">3M</button>
+                    <button class="oneyr" id="three-silver">1Y</button>
+                    <button class="fiveyr" id="four-silver">5Y</button>
+                </div>
+                <div class="silver-graphs" id="silver">
+                </div>
+                <div class="view-options" id="view-options">
                     <button class="onem" id="one-returns">1M</button>
                     <button class="threem" id="two-returns">3M</button>
                     <button class="oneyr" id="three-returns">1Y</button>
@@ -113,7 +162,7 @@
                                 id="party-two" />
                             for the
                             contractual amount of <input type="number" placeholder="Amount" min="0"
-                                id="contract-amount"> where PARTY 1 is
+                                id="contract-amount"> where <input type="text" placeholder="Party 1" /> is
                             the buyer and <input type="text" placeholder="Party 2" /> is the seller. the
                             representatives
                             of <input type="text" placeholder="Party 1" /> and <input type="text"

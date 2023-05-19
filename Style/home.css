@@ -3,8 +3,23 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+
 .view-contract {
     margin-top: 80px
+}
+
+.contract-agreement {
+    margin-top: 80px
+}
+
+#user-profile {
+    margin-left: 100px;
+}
+
+#user-profile h1 {
+    margin-top: 5px;
+    font-size: xx-large;
+    font-weight: 600;
 }
 
 @media (min-width:1000px) {
@@ -12,7 +27,8 @@ body {
     #product,
     #btc,
     #gold,
-    #returns {
+    #returns,
+    #silver {
         width: 800px;
         height: 400px;
         margin-left: 150px;
@@ -106,7 +122,8 @@ body {
     #product,
     #btc,
     #gold,
-    #returns {
+    #returns,
+    #silver {
         width: 500px;
         height: 400px;
         margin-left: 50px;

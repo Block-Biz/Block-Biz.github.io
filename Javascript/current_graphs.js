@@ -1,8 +1,35 @@
 const signContract = document.getElementById("sign-contract");
+const fundDetails = document.getElementById("fund-details")
+document.getElementById("contract").style.display = "none";
 document.getElementById("navbar").style.display = "none";
 document.getElementById("the_graphs").style.display = "none";
 const home = document.getElementById("home")
+document.getElementById("make-contract").style.color = "black"
+document.getElementById("user-profile").style.display = "none"
+const myProfile = document.getElementById("my-profile")
+document.getElementById("body").style.overflowY = "hidden"
 window.scroll(0, 0)
+const login = document.getElementById("login")
+
+myProfile.addEventListener('click', function onClick() {
+    document.getElementById("user-profile").style.display = "flex"
+    document.getElementById("home").style.color = "whitesmoke";
+    document.getElementById("fund-details").style.color = "whitesmoke";
+    document.getElementById("my-profile").style.color = "black";
+    document.getElementById("make-contract").style.color = "whitesmoke";
+});
+
+login.addEventListener('click', function onClick() {
+    if ((document.getElementById("username").value === "ndlovuraymond") && (document.getElementById("pass").value === "BlockBizRocks")) {
+        document.getElementById("login-form").style.display = "none"
+        document.getElementById("navbar").style.display = "flex";
+        document.getElementById("contract").style.display = "flex";
+        document.getElementById("body").style.overflowY = "scroll"
+    }
+    else {
+        document.getElementById("error-name").innerHTML = "Wrong username or password"
+    }
+});
 signContract.addEventListener('click', function onClick() {
     document.getElementById("navbar").style.display = "flex";
     content = document.querySelector(".view-contract");
@@ -118,6 +145,22 @@ signContract.addEventListener('click', function onClick() {
 home.addEventListener('click', function onClick() {
     document.getElementById("home").style.color = "black";
     document.getElementById("fund-details").style.color = "whitesmoke";
+    document.getElementById("my-profile").style.color = "whitesmoke";
+    document.getElementById("make-contract").style.color = "whitesmoke";
     document.getElementById("view-contract").style.display = "none";
     document.getElementById("the_graphs").style.display = "flex";
+    document.getElementById("contract").style.display = "none"
+    document.getElementById("user-profile").style.display = "none"
 });
+
+fundDetails.addEventListener('click', function onClick() {
+    document.getElementById("home").style.color = "whitesmoke";
+    document.getElementById("my-profile").style.color = "whitesmoke";
+    document.getElementById("make-contract").style.color = "whitesmoke";
+    document.getElementById("fund-details").style.color = "black";
+    document.getElementById("view-contract").style.display = "flex";
+    document.getElementById("the_graphs").style.display = "none";
+    document.getElementById("contract").style.display = "none"
+    document.getElementById("user-profile").style.display = "none"
+});
+

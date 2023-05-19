@@ -8,13 +8,17 @@ body {
     color: white
 }
 
+#error-name {
+    color: orangered
+}
+
 @media (min-width: 600px) {
     .logo {
         width: 225px;
         border-radius: 50%
     }
 
-    button {
+    .login button {
         color: white;
         background-color: #605e5c;
         border: 5px solid #605e5c;
@@ -32,7 +36,7 @@ body {
         align-items: center;
     }
 
-    input {
+    .login input {
         width: 500px;
         height: 40px;
         color: white;
@@ -43,7 +47,7 @@ body {
         text-indent: 10px;
     }
 
-    label {
+    .login label {
         color: white;
         text-align: center;
         font-family: "Poppins", sans-serif;
@@ -58,7 +62,7 @@ body {
         border-radius: 50%
     }
 
-    button {
+    .login button {
         color: white;
         background-color: #605e5c;
         border: 5px solid #605e5c;
@@ -76,7 +80,7 @@ body {
         align-items: center;
     }
 
-    input {
+    .login input {
         width: 350px;
         height: 40px;
         color: white;
@@ -87,7 +91,7 @@ body {
         text-indent: 10px;
     }
 
-    label {
+    .login label {
         color: white;
         text-align: center;
         font-family: "Poppins", sans-serif;
@@ -102,7 +106,7 @@ body {
         border-radius: 50%
     }
 
-    button {
+    .login button {
         color: white;
         background-color: #605e5c;
         border: 5px solid #605e5c;
@@ -120,7 +124,7 @@ body {
         align-items: center;
     }
 
-    input {
+    .login input {
         width: 250px;
         height: 30px;
         color: white;
@@ -131,7 +135,7 @@ body {
         text-indent: 10px;
     }
 
-    label {
+    .login label {
         color: white;
         text-align: center;
         font-family: "Poppins", sans-serif;
